@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pm="http://primefaces.org/mobile">
+    <h:head>
+        <title>Welcome</title>
+    </h:head>
+    <h:body>
+        <h:form>
+
+            <pm:field>
+                <p:outputLabel for="nome" value="Nome:" />
+                <p:inputText id="nome" value="#{admin.nome}"/>
+            </pm:field>
+
+            <pm:field>
+                <p:outputLabel for="login" value="Login:" />
+                <p:inputText id="login"/>
+            </pm:field>
+
+            <pm:field>
+                <p:outputLabel for="senha" value="Senha:" />
+                <p:password id="senha" />
+            </pm:field>
+            <pm:field>
+                <p:outputLabel for="cpf" value="CPF:" />
+                <p:inputText id="cpf" />
+            </pm:field>
+            <pm:field>
+                <p:outputLabel for="telefone" value="Telefone:" />
+                <p:inputText id="telefone" />
+            </pm:field>
+            <pm:field>
+                <p:outputLabel for="email" value="E-mail:" />
+                <p:inputText id="email" />
+            </pm:field>
+            <pm:field>
+                <p:outputLabel for="dataNascimento" value="Data de nascimento:" />
+                <p:inputText id="dataNascimento" />
+            </pm:field>
+         
+            <p:commandButton value="Salvar admin" id="botaoSalvar" action="#{admin.mostrarUsuario()}"/>
+            
+        </h:form>
+    </h:body>
+</html>
